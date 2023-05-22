@@ -1,4 +1,4 @@
-package cn.ylh.message;
+package edu.ylh.message;
 
 import lombok.Data;
 import lombok.ToString;
@@ -21,6 +21,6 @@ public class ChatResponseMessage extends AbstractResponseMessage {
 
     @Override
     public int getMessageType() {
-        return ChatResponseMessage;
+        return edu.ylh.message.ChatResponseMessage;
     }
 }

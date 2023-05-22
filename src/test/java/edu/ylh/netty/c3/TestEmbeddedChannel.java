@@ -1,4 +1,4 @@
-package cn.ylh.netty.c3;
+package edu.ylh.netty.c3;
 
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.channel.ChannelHandlerContext;

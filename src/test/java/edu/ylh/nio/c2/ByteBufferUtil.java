@@ -1,4 +1,4 @@
-package cn.ylh.nio.c2;
+package edu.ylh.nio.c2;
 
 import io.netty.util.internal.StringUtil;
 

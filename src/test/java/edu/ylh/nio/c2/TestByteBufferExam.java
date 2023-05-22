@@ -1,8 +1,6 @@
-package cn.ylh.nio.c2;
+package edu.ylh.nio.c2;
 
 import java.nio.ByteBuffer;
-
-import static cn.ylh.nio.c2.ByteBufferUtil.debugAll;
 
 public class TestByteBufferExam {
     public static void main(String[] args) {
@@ -36,7 +34,7 @@ public class TestByteBufferExam {
                 for (int j = 0; j < length; j++) {
                     target.put(source.get());
                 }
-                debugAll(target);
+                ByteBufferUtil.debugAll(target);
             }
         }
         source.compact();

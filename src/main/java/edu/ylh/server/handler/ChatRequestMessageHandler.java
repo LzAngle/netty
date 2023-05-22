@@ -1,8 +1,8 @@
-package cn.ylh.server.handler;
+package edu.ylh.server.handler;
 
-import cn.ylh.message.ChatRequestMessage;
-import cn.ylh.message.ChatResponseMessage;
-import cn.ylh.server.session.SessionFactory;
+import edu.ylh.message.ChatRequestMessage;
+import edu.ylh.message.ChatResponseMessage;
+import edu.ylh.server.session.SessionFactory;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

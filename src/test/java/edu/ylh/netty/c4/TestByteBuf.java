@@ -1,4 +1,4 @@
-package cn.ylh.netty.c4;
+package edu.ylh.netty.c4;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;

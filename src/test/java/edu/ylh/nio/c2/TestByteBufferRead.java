@@ -1,8 +1,8 @@
-package cn.ylh.nio.c2;
+package edu.ylh.nio.c2;
 
 import java.nio.ByteBuffer;
 
-import static cn.ylh.nio.c2.ByteBufferUtil.debugAll;
+import static edu.ylh.nio.c2.ByteBufferUtil.debugAll;
 
 public class TestByteBufferRead {
 

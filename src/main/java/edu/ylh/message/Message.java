@@ -1,4 +1,4 @@
-package cn.ylh.message;
+package edu.ylh.message;
 
 import lombok.Data;
 

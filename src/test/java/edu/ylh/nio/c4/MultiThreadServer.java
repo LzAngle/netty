@@ -1,4 +1,4 @@
-package cn.ylh.nio.c4;
+package edu.ylh.nio.c4;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static cn.ylh.nio.c2.ByteBufferUtil.debugAll;
+import static edu.ylh.nio.c2.ByteBufferUtil.debugAll;
 
 @Slf4j
 public class MultiThreadServer {

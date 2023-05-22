@@ -1,6 +1,6 @@
-package cn.ylh.protocol;
+package edu.ylh.protocol;
 
-import cn.ylh.message.Message;
+import edu.ylh.message.Message;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

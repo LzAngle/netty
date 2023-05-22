@@ -1,9 +1,9 @@
-package cn.ylh.server.handler;
+package edu.ylh.server.handler;
 
-import cn.ylh.message.GroupJoinRequestMessage;
-import cn.ylh.message.GroupJoinResponseMessage;
-import cn.ylh.server.session.Group;
-import cn.ylh.server.session.GroupSessionFactory;
+import edu.ylh.message.GroupJoinRequestMessage;
+import edu.ylh.message.GroupJoinResponseMessage;
+import edu.ylh.server.session.Group;
+import edu.ylh.server.session.GroupSessionFactory;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

@@ -1,6 +1,6 @@
-package cn.ylh.server.handler;
+package edu.ylh.server.handler;
 
-import cn.ylh.server.session.SessionFactory;
+import edu.ylh.server.session.SessionFactory;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

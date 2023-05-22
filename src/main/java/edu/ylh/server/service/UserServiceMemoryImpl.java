@@ -1,4 +1,4 @@
-package cn.ylh.server.service;
+package edu.ylh.server.service;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

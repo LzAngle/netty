@@ -1,4 +1,4 @@
-package cn.ylh.server.service;
+package edu.ylh.server.service;
 
 public abstract class UserServiceFactory {
 

@@ -1,4 +1,4 @@
-package cn.ylh.netty.c3;
+package edu.ylh.netty.c3;
 
 import io.netty.channel.EventLoop;
 import io.netty.channel.nio.NioEventLoopGroup;

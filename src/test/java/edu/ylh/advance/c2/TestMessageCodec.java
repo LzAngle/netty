@@ -1,7 +1,7 @@
-package cn.ylh.advance.c2;
+package edu.ylh.advance.c2;
 
-import cn.ylh.message.LoginRequestMessage;
-import cn.ylh.protocol.MessageCodec;
+import edu.ylh.message.LoginRequestMessage;
+import edu.ylh.protocol.MessageCodec;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.channel.embedded.EmbeddedChannel;

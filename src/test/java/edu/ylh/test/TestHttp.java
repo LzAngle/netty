@@ -1,4 +1,4 @@
-package cn.ylh.test;
+package edu.ylh.test;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;

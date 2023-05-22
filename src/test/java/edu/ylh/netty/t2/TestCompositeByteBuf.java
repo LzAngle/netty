@@ -4,8 +4,6 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.buffer.CompositeByteBuf;
 
-import static edu.ylh.netty.t2.TestByteBuf.log;
-
 /**
  * @author 靓仔
  * @date 2023/5/17
@@ -26,7 +24,7 @@ public class TestCompositeByteBuf {
         // 上面的代码等价于下面的代码
         CompositeByteBuf buffer = ByteBufAllocator.DEFAULT.compositeBuffer();
         buffer.addComponents(true,buf1, buf2);
-        log(buffer);
+        TestByteBuf.log(buffer);
 
     }
 

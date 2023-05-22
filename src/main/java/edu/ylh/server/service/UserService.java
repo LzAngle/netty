@@ -1,4 +1,4 @@
-package cn.ylh.server.service;
+package edu.ylh.server.service;
 
 /**
  * 用户管理接口

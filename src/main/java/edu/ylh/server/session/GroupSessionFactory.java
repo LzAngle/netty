@@ -1,4 +1,4 @@
-package cn.ylh.server.session;
+package edu.ylh.server.session;
 
 public abstract class GroupSessionFactory {
 

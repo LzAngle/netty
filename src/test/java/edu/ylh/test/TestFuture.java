@@ -1,4 +1,4 @@
-package cn.ylh.test;
+package edu.ylh.test;
 
 import lombok.extern.slf4j.Slf4j;
 

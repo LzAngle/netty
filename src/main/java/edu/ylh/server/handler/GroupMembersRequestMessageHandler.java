@@ -1,8 +1,8 @@
-package cn.ylh.server.handler;
+package edu.ylh.server.handler;
 
-import cn.ylh.message.GroupMembersRequestMessage;
-import cn.ylh.message.GroupMembersResponseMessage;
-import cn.ylh.server.session.GroupSessionFactory;
+import edu.ylh.message.GroupMembersRequestMessage;
+import edu.ylh.message.GroupMembersResponseMessage;
+import edu.ylh.server.session.GroupSessionFactory;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

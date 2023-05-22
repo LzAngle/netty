@@ -1,4 +1,4 @@
-package cn.ylh.test;
+package edu.ylh.test;
 
 import io.netty.channel.DefaultEventLoop;
 import io.netty.util.concurrent.DefaultPromise;

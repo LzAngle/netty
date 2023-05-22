@@ -1,4 +1,4 @@
-package cn.ylh.advance.c1;
+package edu.ylh.advance.c1;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.AdaptiveRecvByteBufAllocator;

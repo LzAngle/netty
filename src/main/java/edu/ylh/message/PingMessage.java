@@ -1,4 +1,4 @@
-package cn.ylh.message;
+package edu.ylh.message;
 
 public class PingMessage extends Message {
     @Override

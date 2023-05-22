@@ -1,4 +1,4 @@
-package cn.ylh.nio.c3;
+package edu.ylh.nio.c3;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,4 +1,4 @@
-package cn.ylh.netty.c5;
+package edu.ylh.netty.c5;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;

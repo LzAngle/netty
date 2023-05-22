@@ -1,4 +1,4 @@
-package cn.ylh.netty.c2;
+package edu.ylh.netty.c2;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelHandlerContext;

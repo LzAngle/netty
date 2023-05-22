@@ -1,4 +1,4 @@
-package cn.ylh.advance.c2;
+package edu.ylh.advance.c2;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;

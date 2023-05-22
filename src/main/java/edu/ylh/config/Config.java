@@ -1,7 +1,7 @@
-package cn.ylh.config;
+package edu.ylh.config;
 
 
-import cn.ylh.protocol.Serializer;
+import edu.ylh.protocol.Serializer;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,4 +1,4 @@
-package cn.ylh.protocol;
+package edu.ylh.protocol;
 
 import com.google.gson.*;
 

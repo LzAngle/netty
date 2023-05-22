@@ -1,5 +1,6 @@
 package edu.ylh.nio.network;
 
+import edu.ylh.nio.componentAndFile.ByteBufferUtil;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -9,8 +10,6 @@ import java.nio.channels.*;
 import java.util.Iterator;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import static edu.ylh.nio.componentAndFile.ByteBufferUtil.debugAll;
 
 /**
  * @author 靓仔
@@ -108,7 +107,7 @@ public class MultiThreadServer {
                             log.debug("read...{}", channel.getRemoteAddress());
                             channel.read(buffer);
                             buffer.flip();
-                            debugAll(buffer);
+                            ByteBufferUtil.debugAll(buffer);
                         }
                     }
                 } catch (IOException e) {

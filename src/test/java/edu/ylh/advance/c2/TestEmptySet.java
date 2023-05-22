@@ -1,4 +1,4 @@
-package cn.ylh.advance.c2;
+package edu.ylh.advance.c2;
 
 import java.util.Collections;
 
