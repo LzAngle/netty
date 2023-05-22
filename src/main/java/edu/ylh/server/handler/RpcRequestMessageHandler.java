@@ -20,6 +20,8 @@ public class RpcRequestMessageHandler extends SimpleChannelInboundHandler<RpcReq
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, RpcRequestMessage message) {
         RpcResponseMessage response = new RpcResponseMessage();
+        // 同步序列号
+        response.setSequenceId(message.getSequenceId());
         try {
             HelloService service = (HelloService)
                     ServicesFactory.getService(Class.forName(message.getInterfaceName()));
@@ -28,7 +30,8 @@ public class RpcRequestMessageHandler extends SimpleChannelInboundHandler<RpcReq
             response.setReturnValue(invoke);
         } catch (Exception e){
             e.printStackTrace();
-            response.setExceptionValue(e);
+            String msg = e.getCause().getMessage();
+            response.setExceptionValue(new Exception("远程调用出错" + msg));
         }
         ctx.writeAndFlush(response);
     }
