@@ -1,6 +1,7 @@
 package edu.ylh.netty.c3;
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.ByteBuf;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -8,6 +9,8 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+
+import java.nio.charset.Charset;
 
 @Slf4j
 public class TestPipeline {
@@ -25,23 +28,27 @@ public class TestPipeline {
                             @Override
                             public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                 log.debug("1");
-                                super.channelRead(ctx, msg);
+                                ByteBuf buf = (ByteBuf) msg;
+                                String name = buf.toString(Charset.defaultCharset());
+                                super.channelRead(ctx, name);
                             }
                         });
                         pipeline.addLast("h2", new ChannelInboundHandlerAdapter(){
                             @Override
                             public void channelRead(ChannelHandlerContext ctx, Object name) throws Exception {
                                 log.debug("2");
-                                super.channelRead(ctx, name); // 将数据传递给下个 handler，如果不调用，调用链会断开 或者调用 ctx.fireChannelRead(student);
+                                Student student = new Student(name.toString());
+                                super.channelRead(ctx, student); // 将数据传递给下个 handler ，如果不调用，数据不会传递给下个 handler，也不会传递给下个 pipeline，导致调用链断开
+                                // ctx.fireChannelRead(student);// 传输数据给下一个入栈处理器
                             }
                         });
 
                         pipeline.addLast("h3", new ChannelInboundHandlerAdapter(){
                             @Override
                             public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-                                log.debug("3");
-                                ctx.writeAndFlush(ctx.alloc().buffer().writeBytes("server...".getBytes()));
-//                                ch.writeAndFlush(ctx.alloc().buffer().writeBytes("server...".getBytes()));
+                                log.debug("3,结果{},class:{}",msg,msg.getClass());
+                                // super.channelRead(ctx,msg);// 这里没必要调用了，因为下面是出栈处理器，没有入栈处理器了
+                                ctx.writeAndFlush(ctx.alloc().buffer().writeBytes("server...".getBytes()));// 调用writeAndFlush唤醒下一个出栈处理器
                             }
                         });
                         pipeline.addLast("h4", new ChannelOutboundHandlerAdapter(){

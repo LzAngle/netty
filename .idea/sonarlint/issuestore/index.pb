@@ -39,8 +39,6 @@ h
 8src/main/java/edu/ylh/protocol/ProtocolFrameDecoder.java,0/f/0fe77a2259c6aec52399000d8b6644e02110d242
 s
 Csrc/main/java/edu/ylh/server/handler/ChatRequestMessageHandler.java,0/a/0a9b0cbb07cf0818e04910e21d0480cfde1310ab
-x
-Hsrc/main/java/edu/ylh/server/handler/GroupChatRequestMessageHandler.java,6/0/601ad96c4595414fbce4164236b4943dcf9a29a7
 z
 Jsrc/main/java/edu/ylh/server/handler/GroupCreateRequestMessageHandler.java,8/6/861c27d1975107299ad3e906e4ea9e5de5b080e9
 x
@@ -49,8 +47,6 @@ Hsrc/main/java/edu/ylh/server/handler/GroupJoinRequestMessageHandler.java,6/5/6
 Ksrc/main/java/edu/ylh/server/handler/GroupMembersRequestMessageHandler.java,8/1/813dfbc1cffd95f12c8668202d6d378ccf8752e0
 x
 Hsrc/main/java/edu/ylh/server/handler/GroupQuitRequestMessageHandler.java,1/9/191256f19ada974254e7fa86c7e793d50b6129f2
-t
-Dsrc/main/java/edu/ylh/server/handler/LoginRequestMessageHandler.java,e/0/e0ee0d8a810a3c4228b2d1a5fc6a9abe259617a1
 e
 5src/main/java/edu/ylh/server/handler/QuitHandler.java,a/e/ae5fd09871de56b1c6af42187e7811b0c469aaff
 e
