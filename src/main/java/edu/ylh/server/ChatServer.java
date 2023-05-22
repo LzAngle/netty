@@ -75,11 +75,11 @@ public class ChatServer {
                             }
                         }
                     });
-                    // 添加自定义协议处理器
+                    // 添加粘包半包处理器
                     ch.pipeline().addLast(new ProtocolFrameDecoder());
                     // 添加日志打印处理器
                     ch.pipeline().addLast(LOGGING_HANDLER);
-                    // 添加消息编解码处理器
+                    // 添加自定义协议编解码处理器
                     ch.pipeline().addLast(MESSAGE_CODEC);
                     // 添加登录处理器
                     ch.pipeline().addLast(LOGIN_HANDLER);

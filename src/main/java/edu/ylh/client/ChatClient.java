@@ -53,9 +53,9 @@ public class ChatClient {
             bootstrap.handler(new ChannelInitializer<SocketChannel>() {
                 @Override
                 protected void initChannel(SocketChannel ch) throws Exception {
-                    // 添加自定义协议处理器
+                    // 添加粘包半包处理器
                     ch.pipeline().addLast(new ProtocolFrameDecoder());
-                    // 添加消息编解码处理器
+                    // 添加自定义协议编解码处理器
                     ch.pipeline().addLast(MESSAGE_CODEC);
                     // 添加连接状态判断处理器
                     // 用来判断是不是 读空闲时间过长，或 写空闲时间过长
