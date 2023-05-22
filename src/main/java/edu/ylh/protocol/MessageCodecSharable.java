@@ -32,7 +32,7 @@ public class MessageCodecSharable extends MessageToMessageCodec<ByteBuf, Message
         // 无意义，对齐填充
         out.writeByte(0xff);
         // 6. 获取内容的字节数组
-        byte[] bytes = Serializer.Algorithm.Java.serialize(msg);// 封装好
+        byte[] bytes = Config.getSerializerAlgorithm().serialize(msg);;// 封装好
         // ByteArrayOutputStream bos = new ByteArrayOutputStream();
         // ObjectOutputStream oos = new ObjectOutputStream(bos);
         // oos.writeObject(msg);

@@ -1,7 +1,7 @@
 package edu.ylh.client.handler;
 
-import cn.itcast.message.RpcRequestMessage;
-import cn.itcast.message.RpcResponseMessage;
+
+import edu.ylh.message.RpcResponseMessage;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
