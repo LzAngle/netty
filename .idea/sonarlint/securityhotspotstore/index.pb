@@ -25,8 +25,6 @@ k
 ;src/main/java/edu/ylh/message/GroupQuitResponseMessage.java,5/2/52664900314f9fbe21a6a5be2d61d66b1727399c
 f
 6src/main/java/edu/ylh/message/LoginRequestMessage.java,5/b/5b734ff8d04f827bac100ab598e4652648717659
-Z
-*src/main/java/edu/ylh/message/Message.java,c/6/c6da7563207b1ac9fd867661b6c55c92e477b36f
 g
 7src/main/java/edu/ylh/message/LoginResponseMessage.java,4/a/4a19e3d07a50a897df7a7522b7a3203adb2a08d8
 ^
