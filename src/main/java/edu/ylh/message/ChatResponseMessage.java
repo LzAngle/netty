@@ -21,6 +21,6 @@ public class ChatResponseMessage extends AbstractResponseMessage {
 
     @Override
     public int getMessageType() {
-        return edu.ylh.message.ChatResponseMessage;
+        return ChatResponseMessage;
     }
 }

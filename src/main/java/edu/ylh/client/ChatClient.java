@@ -47,6 +47,8 @@ public class ChatClient {
             bootstrap.channel(NioSocketChannel.class);
             // 添加工作组
             bootstrap.group(group);
+            // 设置连接服务器5秒超时
+            bootstrap.option(ChannelOption.CONNECT_TIMEOUT_MILLIS,5000);
             // 初始化自定义业务的处理器
             bootstrap.handler(new ChannelInitializer<SocketChannel>() {
                 @Override
@@ -198,10 +200,11 @@ public class ChatClient {
                     });
                 }
             });
-
+            // 连接本地8080端口的服务，同步等待，获得channel
             Channel channel = bootstrap.connect("localhost", 8080)
                     .sync()
                     .channel();
+            // 同步等待，完成后关闭
             channel.closeFuture().sync();
         } catch (Exception e) {
             log.error("client error", e);
