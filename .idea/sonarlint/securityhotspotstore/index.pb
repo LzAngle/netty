@@ -145,10 +145,6 @@ h
 8src/main/java/edu/ylh/protocol/MessageCodecSharable.java,2/4/24022da9abfc59091cb9e2fec0a1eb0388809954
 X
 (src/main/java/edu/ylh/config/Config.java,f/9/f92f2ec52e3e45380ef4b046d4426dd2d4bb26af
-\
-,src/main/java/edu/ylh/server/ChatServer.java,9/1/916fb5f123d256d7ef29221f2c14311c6c359451
-\
-,src/main/java/edu/ylh/client/ChatClient.java,6/6/66710683db683f201ca9cd99af2678e62e0a7850
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
